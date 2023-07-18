@@ -1,0 +1,17 @@
+// Scss code for all app page components
+
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: $txt-policy;
+    max-width: 1440px;
+    margin: 50px auto;
+    // padding: 0px 50px;
+}

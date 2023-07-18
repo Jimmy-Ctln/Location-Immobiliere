@@ -1,0 +1,36 @@
+// Scss code for the Kasa logo + navigation
+
+@import 'variables';
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        &__logo {
+            width: 210.32px;
+            height: 68px;
+        }
+        
+        &__nav {
+            display: flex;
+            gap: 20px;
+            text-decoration: none;
+
+            
+        }
+
+        &__li {
+            color: $primary-color;
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 34.22px;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        
+    }
+
+
