@@ -1,6 +1,7 @@
 import { ImageBanner } from "../../components/Image banner/imageBanner"
 import '../../style/home.scss'
 import { Gallery } from "../../components/Gallery/gallery"
+import { Footer } from "../../components/Footer/footer"
 
 // "Home" displays the "ImageBanner" and "Gallery" components. "Home" will be called with the "/" route in App.jsx
 
@@ -9,6 +10,7 @@ export function Home() {
         <div className="body">
             <ImageBanner />
             <Gallery />
+            <Footer />
         </div> 
     )
 }
