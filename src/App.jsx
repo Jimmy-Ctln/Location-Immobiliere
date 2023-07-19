@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { Header } from "./components/Header/header";
 import { AboutUs } from "./pages/About_Us/AboutUs";
+import { ErrorPage } from "./pages/Error/errorPage";
 import './style/App.scss'
 
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<AboutUs />} />
+          <Route path="/*" element={<ErrorPage />}/>
         </Routes>
       </BrowserRouter>
     </div>
