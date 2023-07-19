@@ -1,12 +1,14 @@
-
 import '../../style/ImageBanner.scss'
 
+// Créer un composant réutilisable ici.
 
-export function ImageBanner() {
+export function ImageBanner({picture, title}) {
     return(
-        <div className='container'>
-            <div className='container__overlay'></div>
-                <h1 className='container__title'>Chez vous, partout et ailleurs</h1>
+        <div className='section'>
+            <div className='section__overlay'>
+                <img className='section__img' src={picture} alt="Paysage" />
+                <h1 className='section__title'>{title}</h1>
+            </div>
         </div>
     )
 }

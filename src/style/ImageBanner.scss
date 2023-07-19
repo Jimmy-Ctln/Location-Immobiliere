@@ -1,20 +1,26 @@
 // code scss for the image banner component
 
-.container {
-    margin-top: 20px;
+.section {
     position: relative;
-    background: black;
+    margin-top: 20px;
     height: 223px;
-    background: url(../assets/home-background.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
+
 
     &__overlay {
-        background: rgba(0,0,0,0.3);
+        position: absolute;
         border-radius: 25px;
+        background-color: black;
         width: 100%;
         height: 100%;
+    }
+
+    &__img {
+        position: absolute;
+        border-radius: 25px;
+        opacity: 60%;
+        height: 223px;
+        width: 100%;
+        object-fit: cover;
     }
     
     &__title {
