@@ -1,0 +1,14 @@
+.gallery__container {
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    padding: 50px 70px;
+    // grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, minmax(340px, 1fr));
+    grid-template-rows: repeat(7, 340px);
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    grid-gap: 50px;
+}
