@@ -1,0 +1,37 @@
+.card {
+
+    display: grid;
+    position: relative;
+    // width: 100%;
+    // height: 100%;
+
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+        border-radius: 10px;
+    }
+ 
+    &__title {
+        position: absolute;
+        width: 300px;
+        bottom: 15px;
+        left: 10px;
+        color: white;
+        font-size: 18px;
+        line-height: 25.67px;
+        font-weight: 500;
+    }
+
+}
+
+
