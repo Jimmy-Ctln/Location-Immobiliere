@@ -1,5 +1,7 @@
 import '../../style/card.scss'
 
+// creation of a standard card with props to be used in the gallery component
+
 export function Card({cover, title}) {
     return(
         

@@ -2,6 +2,8 @@ import { Card } from "../Card/card";
 import { useEffect, useState } from 'react'
 import '../../style/gallery.scss'
 
+// gallery here allows you to retrieve property rentals and generate them using the card component.
+
 export function Gallery() {
     const [locationList, setLocationList] = useState([])
 
