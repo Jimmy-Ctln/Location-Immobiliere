@@ -4,6 +4,7 @@ import { Header } from "./components/Header/header";
 import { AboutUs } from "./pages/About_Us/AboutUs";
 import { ErrorPage } from "./pages/Error/errorPage";
 import { Footer } from "./components/Footer/footer";
+import { PropertyRental } from './pages/Property_Rental/PropertyRental'
 import './style/App.scss'
 
 
@@ -16,9 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<AboutUs />} />
-          <Route path="/*" element={<ErrorPage />}/>
+          <Route path="/propertyrental/:propertyRentalId" element={<PropertyRental/>} />
+          <Route path="*" element={<ErrorPage />}/>
         </Routes>
-      <Footer/>
+      {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
