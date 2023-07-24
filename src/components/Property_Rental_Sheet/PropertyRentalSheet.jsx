@@ -22,5 +22,6 @@ export function PropertyRentalSheet({title, hostName, hostPicture, rating, locat
                     </div>
             </div>
         </div>
+
     )
 }

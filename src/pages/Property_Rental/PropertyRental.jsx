@@ -3,6 +3,7 @@ import { PropertyRentalSheet } from "../../components/Property_Rental_Sheet/Prop
 import { datas } from "../../Datas/datas"
 import { useParams } from "react-router-dom"
 import { Carrousel } from "../../components/Carrousel/Carrousel"
+import { Rating } from "../../components/Rating/rating"
 
 
 export function PropertyRental() {
@@ -37,6 +38,9 @@ export function PropertyRental() {
                 location={item.location}
                 hostName={item.host.name}
                 hostPicture={item.host.picture}
+            />
+            <Rating
+            rating={item.rating} // === un nombre
             />
             </div>
             
