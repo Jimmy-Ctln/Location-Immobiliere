@@ -1,0 +1,52 @@
+.carrousel {
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    &__arrow__left {
+        position: absolute;
+        left: 0;
+        bottom: 35%;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__arrow__right {
+        position: absolute;
+        right: 0;
+        bottom: 35%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+
+    &__slideCounter {
+        position: absolute;
+        bottom: 05%;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+    }
+
+
+
+}
+
+.hide__elements {
+    display: none;
+}
