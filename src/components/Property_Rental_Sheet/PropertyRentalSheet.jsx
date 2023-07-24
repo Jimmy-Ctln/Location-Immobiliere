@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom"
 import '../../style/propertyRental.scss'
+import arrowLeft from '../../assets/arrow-left.svg'
+import arrowRight from '../../assets/arrow-right.svg'
 
 export function PropertyRentalSheet({title, carrousel, description, hostName, hostPicture, rating, location, equipements, tags}) {
 
@@ -15,6 +17,9 @@ export function PropertyRentalSheet({title, carrousel, description, hostName, ho
         <div className="propertyrental">
             <div className="propertyrental__carrousel">
                 <img className="propertyrental__img" src={carrousel} alt="logement" />
+                <img src={arrowLeft} className="propertyrental__arrow__left" alt="Flèche de gauche carrousel" />
+                <img src={arrowRight} className="propertyrental__arrow__right" alt="Flèche de droite carrousel" />
+
             </div>
             <div className="propertyrental__grid">
                 <div className="propertyrental__left">

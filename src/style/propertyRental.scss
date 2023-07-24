@@ -10,12 +10,12 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     align-content: center;
 
     &__carrousel {
         display: flex;
         justify-content: center;
+        position: relative;
 
     }
 
@@ -25,6 +25,24 @@
         object-fit: cover;
         border-radius: 25px;
     }
+
+    &__arrow__left {
+        position: absolute;
+        left: 0;
+        bottom: 35%;
+    }
+
+    &__arrow__right {
+        position: absolute;
+        right: 0;
+        bottom: 35%;
+        
+    }
+
+    &__arrow__right {
+
+    }
+
 
     &__grid {
         display: grid;
@@ -39,6 +57,7 @@
 
     &__title {
         color: $primary-color;
+        margin-bottom: 5px;
     }
 
     &__location {
