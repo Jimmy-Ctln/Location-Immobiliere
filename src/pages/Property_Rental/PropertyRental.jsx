@@ -4,6 +4,7 @@ import { datas } from "../../Datas/datas"
 import { useParams } from "react-router-dom"
 import { Carrousel } from "../../components/Carrousel/Carrousel"
 import { Rating } from "../../components/Rating/rating"
+import { Tags } from "../../components/Tags/tags"
 
 
 export function PropertyRental() {
@@ -42,6 +43,10 @@ export function PropertyRental() {
             <Rating
             rating={item.rating} // === un nombre
             />
+
+            <Tags 
+            tags={item.tags}/>
+
             </div>
             
             ))}
