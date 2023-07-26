@@ -6,7 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-        &__logo {
+    width: 95%;
+    margin: 0 auto;
+        
+    &__logo {
             width: 210.32px;
             height: 68px;
         }

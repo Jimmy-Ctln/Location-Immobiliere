@@ -3,21 +3,22 @@
 
 
 .property{
-
-
+    
+    
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        // width: 1240px;
-        // margin: 0 auto;
+        width: 95%;
+        margin: 0 auto;
     }
 
     &__grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 10px auto 40px;
+        width: 95%;
 
     }
 

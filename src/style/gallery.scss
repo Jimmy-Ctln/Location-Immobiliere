@@ -1,9 +1,10 @@
 .gallery__container {
 
     display: grid;
+    max-width: 1440px;
     justify-content: center;
     justify-items: center;
-    margin: 50px 0 50px;
+    margin: 50px auto 50px;
     padding: 50px 70px;
     grid-template-columns: repeat(3, minmax(340px, 1fr));
     grid-template-rows: repeat(7, 340px);

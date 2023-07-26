@@ -43,8 +43,9 @@
 .collapse {
     overflow: hidden;
     position: relative;
-    margin: 20px auto 0;
-    width: 100%;
+    margin: 0px auto;
+    max-width: 1023px;
+
 
     &__title {
         display: flex;

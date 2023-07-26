@@ -1,6 +1,8 @@
 import { ImageBanner } from "../../components/ImageBanner/imageBanner"
 import { Collapse } from "../../components/Collapse/collapse"
 import aboutBackground from '../../assets/aboutUs-Background.svg'
+import '../../style/aboutUs.scss'
+
 
 export function AboutUs() {
 
@@ -26,8 +28,10 @@ export function AboutUs() {
 
     return(
         <div>
-            <ImageBanner picture={aboutBackground}/>
-            {collapse.map(collapse => ( <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />))}
+                <ImageBanner picture={aboutBackground}/>
+            <div className="aboutUs__collapse">
+                {collapse.map(collapse => ( <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />))}
+            </div>
         </div>
     )
 }
