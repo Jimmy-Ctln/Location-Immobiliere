@@ -1,6 +1,5 @@
 import '../../style/ImageBanner.scss'
 
-// Créer un composant réutilisable ici.
 
 export function ImageBanner({picture, title}) {
     return(

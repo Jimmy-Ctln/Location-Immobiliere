@@ -6,12 +6,12 @@ export function Tags({tags}) {
     
 
     const tagsElement = tags.map((tag, index) => (
-        <span className='tags' key={index}>{tag}</span>
+        <span className='tag' key={index}>{tag}</span>
     ))
 
 
     return(
-        <div>
+        <div className='tags'>
             {tagsElement}
         </div>
     )

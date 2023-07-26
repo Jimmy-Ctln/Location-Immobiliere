@@ -1,4 +1,4 @@
-import { ImageBanner } from "../../components/Image banner/imageBanner"
+import { ImageBanner } from "../../components/ImageBanner/imageBanner"
 import { Collapse } from "../../components/Collapse/collapse"
 import aboutBackground from '../../assets/aboutUs-Background.svg'
 

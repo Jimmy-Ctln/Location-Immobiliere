@@ -10,7 +10,6 @@ import './style/App.scss'
 
 function App() {
   return (
-    
     <div>
       <BrowserRouter>
         <Header />
@@ -20,7 +19,7 @@ function App() {
           <Route path="/propertyrental/:propertyRentalId" element={<PropertyRental/>} />
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
-      {/* <Footer/> */}
+      <Footer/>
       </BrowserRouter>
     </div>
   );

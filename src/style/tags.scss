@@ -1,13 +1,22 @@
 @import 'variables';
 
-.tags{
-    background-color: $primary-color;
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    color: white;
-    font-size: 14px;
-    line-height: 19.96px;
-    margin: 5px;
-    padding: 5px 30px;
+
+.tags {
+
+    display: flex;
+    align-items: center;
+    .tag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-color;
+        width: 20%;
+        height: 25%;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        line-height: 19.96px;
+        margin: 5px;
+        padding: 2px 10px;
+    }
 }

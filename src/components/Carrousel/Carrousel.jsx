@@ -13,7 +13,6 @@ export function Carrousel({pictures}) {
     
     
     return(
-        <div>
             <div className="carrousel">
                     <img className="carrousel__img" src={pictures[currImage]} alt="logement" />
                     <img src={arrowLeft} className={`carrousel__arrow__left ${hideElement ? 'hide__elements' : ''}`} onClick={() => currImage === 0 ? setCurrImage(pictures.length - 1) : currImage > 0 && setCurrImage(currImage - 1)} alt="Flèche de gauche carrousel" />
@@ -22,6 +21,5 @@ export function Carrousel({pictures}) {
                     <span>{currentSlide}/{currentPictures}</span>
                 </div>
             </div>
-        </div>
     )
 }

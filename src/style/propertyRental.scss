@@ -1,62 +1,59 @@
 @import 'variables';
 
-.propertyrental___title
-.propertyrental__location {
-    color: $primary-color;
-}
 
-.propertyrental {
 
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+.property{
 
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        // width: 1240px;
+        // margin: 0 auto;
+    }
 
     &__grid {
         display: grid;
-        grid-row: 1;
-        margin-top: 20px;
-        align-items: center;
-    }
+        grid-template-columns: 1fr 1fr;
+        margin: 10px auto 40px;
 
-    &__left {
-        grid-row: 1;
     }
 
     &__title {
-        color: $primary-color;
-        margin-bottom: 5px;
+        // width: 635px;
     }
 
-    &__location {
-        color: $primary-color;
+
+    &__host {
+
     }
 
-    &__right {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        justify-content: flex-end;
-        grid-row: 1;
-    }
-
-    &__host__name {
-        color: $primary-color;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25.67px;
-    }
-
-    &__host__img {
-        width: 64px;
-        height: 64px;
-        border-radius: 50px;
-    }
-
-    &__right__stars {
+    &__tags {
+        grid-column: 1;
         grid-row: 2;
-        grid-column: 3;
+        margin-top: 10px;
     }
 
+    &__rating {
+        grid-column: 2;
+    }
+
+    &__collapse__description {
+        grid-row: 3;
+        grid-column: 1;
+        margin-right: 30px;
+    }
+
+    &__collapse__equipement {
+        grid-row: 3;
+        grid-column: 2;
+        margin-left: 30px;
+    }
+
+
+
+
+    
 }

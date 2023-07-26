@@ -6,6 +6,7 @@ export function Collapse({title, content}) {
 
      
     const [isOpen, setIsOpen] = useState(false)
+
     
     return isOpen ? (
 
@@ -26,15 +27,7 @@ export function Collapse({title, content}) {
                         <div className='collapse__content'>{content}</div>
                     </div>
             </div>
-    )
-
-
-
-
-
-
-
-
+        )
 
 
 

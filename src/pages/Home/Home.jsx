@@ -1,4 +1,4 @@
-import { ImageBanner } from "../../components/Image banner/imageBanner"
+import { ImageBanner } from "../../components/ImageBanner/imageBanner"
 import '../../style/home.scss'
 import { Gallery } from "../../components/Gallery/gallery"
 import homeBackground from '../../assets/home-background.svg'

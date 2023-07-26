@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+.host {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    &__name {
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+    }
+    
+    &__picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+    }
+}

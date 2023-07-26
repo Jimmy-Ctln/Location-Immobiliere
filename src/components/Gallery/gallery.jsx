@@ -1,5 +1,4 @@
 import { Card } from "../Card/card";
-// import { useEffect, useState } from 'react'
 import "../../style/gallery.scss";
 import { datas } from "../../Datas/datas";
 
@@ -9,13 +8,13 @@ export function Gallery() {
   
   return (
     <div className="gallery__container">
-      {datas.map((location) => (
-        <Card 
-          key={location.id}
-          id={location.id} 
-          cover={location.cover} 
-          title={location.title} />
-      ))}
+        {datas.map((location) => (
+          <Card 
+            key={location.id}
+            id={location.id} 
+            cover={location.cover} 
+            title={location.title} />
+        ))}
     </div>
   );
 }
