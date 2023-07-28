@@ -22,9 +22,7 @@ export function Card({id, cover, title}) {
         
         <div className='card' id={id} onClick={() => retrieveIdCard(id)}>
             <img className="card__img" src={cover} alt="location immobilière"></img>
-                <div className='card__overlay'>
                     <span className='card__title'>{title}</span>
-                </div>
         </div>
     )
 }

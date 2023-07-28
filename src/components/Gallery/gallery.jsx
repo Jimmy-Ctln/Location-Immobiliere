@@ -7,7 +7,8 @@ import { datas } from "../../Datas/datas";
 export function Gallery() {
   
   return (
-    <div className="gallery__container">
+    <div className="gallery">
+      <div className="gallery__grid">
         {datas.map((location) => (
           <Card 
             key={location.id}
@@ -15,6 +16,7 @@ export function Gallery() {
             cover={location.cover} 
             title={location.title} />
         ))}
+        </div>
     </div>
   );
 }
