@@ -53,7 +53,7 @@ export function PropertyRental() {
             <Collapse title={"Description"} content={item.description} />
           </div>
           <div className="property__collapse__equipement">
-            <Collapse title={"Équipements"} content={item.equipement} />
+            <Collapse title={"Équipements"} content={item.equipments} />
           </div>
         </div>
         
