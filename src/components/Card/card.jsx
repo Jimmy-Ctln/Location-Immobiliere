@@ -16,8 +16,6 @@ export function Card({id, cover, title}) {
         navigate("../PropertyRental/"+ propertyRentalId)
     }
 
-
-    
     return(
         
         <div className='card' id={id} onClick={() => retrieveIdCard(id)}>
