@@ -23,12 +23,12 @@ export function PropertyRental() {
     const checkId = datas.find((data) => data.id === propertyRentalId);
 
     if (!checkId) {
-      navigate("/erreur-404");
+      navigate("/erreur404");
     } else {
       const filteredData = datas.filter((item) => item.id === propertyRentalId);
       setFilteredData(filteredData);
     }
-  }, [propertyRentalId]);
+  }, [propertyRentalId, navigate]);
 
   return (
     <div className="property">
