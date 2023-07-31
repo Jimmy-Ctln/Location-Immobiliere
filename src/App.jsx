@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/apropos" element={<AboutUs />} />
+          <Route path="/a-propos" element={<AboutUs />} />
           <Route path="/propertyrental/:propertyRentalId" element={<PropertyRental/>} />
           <Route path="/erreur404" element={<ErrorPage/>} />
           <Route path="*" element={<ErrorPage />}/>
