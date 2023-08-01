@@ -1,11 +1,10 @@
 import starInactive from '../../assets/star-inactive.svg'
+import '../../style/starEmpty.scss'
 
 export function StarInactive() {
    
 
     return(
-        <div className='stars__empty'>
-            <img src={starInactive} alt="Étoile vide" />
-        </div>
+            <img className='star__empty' src={starInactive} alt="Étoile remplie" />
     )
 }

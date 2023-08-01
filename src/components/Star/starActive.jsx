@@ -1,11 +1,9 @@
 import starActive from '../../assets/star-active.svg'
+import '../../style/starActive.scss';
 
 export function StarActive() {
    
-
     return(
-        <div className='stars-full'>
-            <img src={starActive} alt="Étoile remplie" />
-        </div>
+        <img className='star__full' src={starActive} alt="Étoile remplie" />
     )
 }

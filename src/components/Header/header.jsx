@@ -7,7 +7,7 @@ import { NavBar } from "../Navbar/navbar";
 export function Header() {
 
   
-  
+
   return (
     <div className="header">
       <img className="header__logo" src={logo} alt="logo of Kasa" />
