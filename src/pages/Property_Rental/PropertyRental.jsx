@@ -29,10 +29,18 @@ export function PropertyRental() {
       setFilteredData(filteredData);
     }
   }, [propertyRentalId, navigate]);
+  
 
   return (
     <div className="property">
-      {filteredData.map((item) => (
+      {filteredData.map((item) => {
+        const FullName = item.host.name.split(' ')
+        const firstName = FullName[0]
+        const lastName = FullName[1]
+        
+        console.log(FullName)
+
+        return(
         <div className="property__content" key={item.id}>
           <div className="property__carrousel">
             <Carrousel pictures={item.pictures} />
@@ -48,7 +56,7 @@ export function PropertyRental() {
             </div>
 
             <div className="property__host">
-              <Host hostName={item.host.name} hostPicture={item.host.picture} />
+              <Host firstName={firstName} lastName={lastName} hostPicture={item.host.picture} />
             </div>
 
             <div className="property__rating">
@@ -66,7 +74,8 @@ export function PropertyRental() {
             </div>
           </div>
         </div>
-      ))}
+        )
+      })}
     </div>
   );
 }
