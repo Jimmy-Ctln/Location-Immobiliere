@@ -1,7 +1,7 @@
 import { ImageBanner } from "../../components/ImageBanner/imageBanner"
 import '../../style/home.scss'
 import { Gallery } from "../../components/Gallery/gallery"
-import homeBackground from '../../assets/home-background.svg'
+import homeBackground from '../../assets/home-background.png'
 
 // "Home" displays the "ImageBanner" and "Gallery" components. "Home" will be called with the "/" route in App.jsx
 

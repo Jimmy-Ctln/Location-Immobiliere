@@ -1,6 +1,6 @@
 import { ImageBanner } from "../../components/ImageBanner/imageBanner"
 import { Collapse } from "../../components/Collapse/collapse"
-import aboutBackground from '../../assets/aboutUs-Background.svg'
+import aboutBackground from '../../assets/aboutUs-Background.png'
 import '../../style/aboutUs.scss'
 
 
