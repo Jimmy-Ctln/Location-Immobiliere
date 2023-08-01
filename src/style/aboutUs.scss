@@ -1,11 +1,12 @@
-@import 'variables';
+@import "variables";
 
 .aboutUs {
+  margin: 0 auto;
+  max-width: 95%;
+  min-height: 654px;
 
-
-
-    &__collapse {
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
+  &__collapse {
+    margin: 60px auto;
+    margin-bottom: 20px;
+  }
 }
