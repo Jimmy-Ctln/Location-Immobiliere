@@ -1,6 +1,8 @@
 .gallery {
 
     margin: 50px auto 50px;
+    height: auto;
+
 
     @media screen and (max-width: 375px) {
         margin: 25px auto 10px;
@@ -22,8 +24,8 @@
 
         @media screen and (max-width: 375px) {
             border: 1px solid blue;
-            display: flex;
-            flex-direction: column;
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(auto, auto);
             height: 100%;
             background-color: white;
             padding: 10px 10px;

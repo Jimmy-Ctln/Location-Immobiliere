@@ -5,17 +5,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
     gap: 200px;
+    border: 1px solid blue;
+    width: 95%;
+    margin: 90px auto;
+    @media screen and (max-width: 375px) {
+        margin: 60px auto;
+        gap: 160px;
+    }
     
     &__img {
         width: 40%;
-        // height: 60%;
+        
+        @media screen and (max-width: 375px) {
+            width: 60%;
+        }
     }
 
     &__title {
         color: $primary-color;
         font-size: 36px;
+        width: 100%;
+        // line-height: 25.67px;
+        text-align: center;
+        height: 51px;
+        font-weight: 500;
+        @media screen and (max-width: 375px) {
+            font-size: 29px;
+            width: 100%;
+            line-height: 36px;
+
+        }
     }
 
     &__link {

@@ -3,10 +3,19 @@
 .aboutUs {
   margin: 0 auto;
   max-width: 95%;
-  min-height: 654px;
+  min-height: auto;
+  border: 1px solid rgb(255, 0, 230);
+
+  @media screen and (max-width: 375px) {
+      
+  }
+
 
   &__collapse {
-    margin: 60px auto;
-    margin-bottom: 20px;
+    margin: 60px auto 25px;
+    
+    @media screen and (max-width: 375px) {
+      margin: 30px auto 0;
+    }
   }
 }
