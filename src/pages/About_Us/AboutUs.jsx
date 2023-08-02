@@ -2,6 +2,7 @@ import { ImageBanner } from "../../components/ImageBanner/imageBanner"
 import { Collapse } from "../../components/Collapse/collapse"
 import aboutBackground from '../../assets/aboutUs-Background.png'
 import '../../style/aboutUs.scss'
+import '../../style/ImageBanner.scss'
 
 
 export function AboutUs() {
@@ -32,7 +33,12 @@ export function AboutUs() {
 
     return(
         <div className="aboutUs">
-                <ImageBanner className="banner" picture={aboutBackground}/>
+                <ImageBanner
+                ClassSection="section2"
+                ClassOverlay="section2__overlay2"
+                ClassImg='section2__img2'
+                picture={aboutBackground}
+                />    
             <div className="aboutUs__collapse">
                 {collapse.map(collapse => <Collapse key={collapse.id} title={collapse.title} content={collapse.content} />)}
             </div>

@@ -1,12 +1,12 @@
 import '../../style/ImageBanner.scss'
 
 
-export function ImageBanner({picture, title}) {
+export function ImageBanner({picture, ClassSection, ClassOverlay, ClassImg, ClassTitle, title}) {
     return(
-        <div className='section'>
-            <div className='section__overlay'>
-                <img className='section__img' src={picture} alt="Paysage" />
-                <h1 className='section__title'>{title}</h1>
+        <div className={ClassSection}> 
+            <div className={ClassOverlay}>
+                <img className={ClassImg} src={picture} alt="Paysage" />
+                <h1 className={ClassTitle}>{title}</h1>
             </div>
         </div>
     )
