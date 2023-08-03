@@ -16,12 +16,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/a-propos" element={<AboutUs />} />
-          <Route path="/propertyrental/:propertyRentalId" element={<PropertyRental/>} />
-          <Route path="/erreur404" element={<ErrorPage/>} />
+          <Route path="/property-rental/:propertyRentalId" element={<PropertyRental/>} />
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
-      <Footer/>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }

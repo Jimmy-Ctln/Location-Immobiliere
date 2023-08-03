@@ -23,7 +23,7 @@ export function PropertyRental() {
     const checkId = datas.find((data) => data.id === propertyRentalId);
 
     if (!checkId) {
-      navigate("/erreur404");
+      navigate("*");
     } else {
       const filteredData = datas.filter((item) => item.id === propertyRentalId);
       setFilteredData(filteredData);
