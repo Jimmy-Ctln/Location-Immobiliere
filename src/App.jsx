@@ -6,12 +6,14 @@ import { ErrorPage } from "./pages/ErrorPage/errorPage";
 import { Footer } from "./components/Footer/footer";
 import { PropertyRental } from './pages/Property_Rental/PropertyRental'
 import './style/App.scss'
+import './style/mainContainer.scss'
 
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
+      <div className="main-container">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,9 +21,10 @@ function App() {
           <Route path="/property-rental/:propertyRentalId" element={<PropertyRental/>} />
           <Route path="*" element={<ErrorPage />}/>
         </Routes>
+      </div>
       </BrowserRouter>
       <Footer/>
-    </div>
+    </>
   );
 }
 

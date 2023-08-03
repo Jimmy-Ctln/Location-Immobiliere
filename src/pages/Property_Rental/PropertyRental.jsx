@@ -32,7 +32,7 @@ export function PropertyRental() {
   
 
   return (
-    <div className="property">
+    <main className="property">
       {filteredData.map((item) => {
         const FullName = item.host.name.split(' ')
         const firstName = FullName[0]
@@ -76,6 +76,6 @@ export function PropertyRental() {
         </div>
         )
       })}
-    </div>
+    </main>
   );
 }

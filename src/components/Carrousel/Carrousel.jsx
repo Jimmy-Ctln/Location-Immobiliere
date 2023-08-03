@@ -1,7 +1,7 @@
 import { useState } from "react"
-import '../../style/carrousel.scss'
 import arrowLeft from '../../assets/arrow-left.svg'
 import arrowRight from '../../assets/arrow-right.svg'
+import '../../style/carrousel.scss'
 
 export function Carrousel({pictures}) {
 

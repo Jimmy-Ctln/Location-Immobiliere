@@ -8,16 +8,16 @@ import '../../style/home.scss'
 
 export function Home() {
     return(
-        <div className="body">
+        <main className="main-content">
             <ImageBanner
             picture={homeBackground}
             ClassSection="section"
             ClassOverlay="section__overlay1"
             ClassImg='section__img1'
             ClassTitle='section__title1'
-            title={'Chez vous, partout et ailleurs'}
+            title={`Chez vous, ${'\n'}partout et ailleurs`}
             />
             <Gallery />
-        </div> 
+        </main> 
     )
 }

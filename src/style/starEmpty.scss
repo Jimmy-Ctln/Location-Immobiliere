@@ -1,13 +1,11 @@
 .star__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    @media screen and (max-width: 375px) {
-        width: 30px;
-        height: 30px;
-    }
-
+  @media screen and (max-width: 375px) {
+    width: 30px;
+    height: 30px;
+  }
 }

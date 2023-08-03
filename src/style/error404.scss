@@ -1,48 +1,44 @@
-@import 'variables';
+@import "variables";
 
 .error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  border: 1px solid blue;
+  width: 95%;
+  margin: 90px auto;
+  @media screen and (max-width: 375px) {
+    margin: 60px auto;
+    gap: 160px;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 200px;
-    border: 1px solid blue;
-    width: 95%;
-    margin: 90px auto;
+  &__img {
+    width: 40%;
+
     @media screen and (max-width: 375px) {
-        margin: 60px auto;
-        gap: 160px;
+      width: 60%;
     }
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    height: 51px;
+    font-weight: 500;
     
-    &__img {
-        width: 40%;
-        
-        @media screen and (max-width: 375px) {
-            width: 60%;
-        }
+    @media screen and (max-width: 375px) {
+      font-size: 29px;
+      width: 100%;
+      line-height: 36px;
     }
+  }
 
-    &__title {
-        color: $primary-color;
-        font-size: 36px;
-        width: 100%;
-        // line-height: 25.67px;
-        text-align: center;
-        height: 51px;
-        font-weight: 500;
-        @media screen and (max-width: 375px) {
-            font-size: 29px;
-            width: 100%;
-            line-height: 36px;
-
-        }
-    }
-
-    &__link {
-        color: $primary-color;
-        font-size: 18px;
-        margin-bottom: 150px;
-    }
-
-
+  &__link {
+    color: $primary-color;
+    font-size: 18px;
+    margin-bottom: 150px;
+  }
 }

@@ -1,49 +1,29 @@
 // Scss code for the Kasa logo + navigation
 
-@import 'variables';
+@import "variables";
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 95%;
-    margin: 0 auto;
-    @media screen and (max-width: 375px) {
-        
-        border: 1px solid red;
-        
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 375px) {
+    border: 1px solid red;
+  }
+
+  @media screen and (max-width: 375px) {
+    border: 1px solid green;
+  }
+
+  &__logo {
+    width: 210.32px;
+    height: 70px;
+
+    @media screen and (max-width: 530px) {
+      width: 150px;
     }
 
     @media screen and (max-width: 375px) {
-        
-        border: 1px solid green;
-        
+      width: 100px;
     }
-    
-
-    @media screen and (max-width: 375px) {
-        
-        
-    }
-
-
-        
-    &__logo {
-            width: 210.32px;
-            height: 68px;
-
-            @media screen and (max-width: 700px) {
-                width: 145px;
-                height: 68px;
-                
-            }
-
-        }
-        
-   
-        
+  }
 }
-
-    
-
-

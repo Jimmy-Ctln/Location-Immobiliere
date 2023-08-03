@@ -1,40 +1,39 @@
 .card {
+  position: relative;
 
-    position: relative;
-    
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    &__img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        object-fit: cover;
-    }
+  &__img {
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
 
- 
-    &__title {
-        position: absolute;
-        width: 80%;
-        bottom: 15px;
-        left: 10px;
-        color: white;
-        font-size: 1.1rem;
-        line-height: 25.67px;
-        font-weight: 500;
-    }
-
+  &__title {
+    position: absolute;
+    width: 80%;
+    bottom: 15px;
+    left: 10px;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 25.67px;
+    font-weight: 500;
+  }
 }
-
-

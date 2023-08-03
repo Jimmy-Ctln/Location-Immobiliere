@@ -1,78 +1,71 @@
 .carrousel {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
 
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: relative;
-    border: 1px solid violet;
+  @media screen and (max-width: 768px) {
+    margin: 20px auto 10px;
+  }
 
-    @media screen and (max-width: 375px) {
-        width: 95%;
-        margin: 30px auto 10px;
+  &__img {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+
+    @media screen and (max-width: 768px) {
+      height: 255px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+
+  &__arrow__left {
+    position: absolute;
+    left: 0;
+    bottom: 35%;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    &__img {
-        width: 100%;
-        height: 415px;
-        object-fit: cover;
-        border-radius: 25px;
-        
-        @media screen and (max-width: 375px) {
-            height: 255px;
-            width: 100%;
-            margin: 0 auto;
-        }
+    @media screen and (max-width: 768px) {
+      width: 10%;
+      bottom: 40%;
+    }
+  }
+
+  &__arrow__right {
+    position: absolute;
+    right: 0;
+    bottom: 35%;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    &__arrow__left {
-        position: absolute;
-        left: 0;
-        bottom: 35%;
-        
-        &:hover {
-            cursor: pointer;
-        }
-        
-        @media screen and (max-width: 375px) {
-            width: 10%;
-            bottom: 40%;
-        }
+    @media screen and (max-width: 768px) {
+      width: 10%;
+      bottom: 40%;
     }
+  }
 
-    &__arrow__right {
-        position: absolute;
-        right: 0;
-        bottom: 35%;
+  &__slideCounter {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: white;
+    font-size: 18px;
 
-        &:hover {
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 375px) {
-            width: 10%;
-            bottom: 40%;
-        }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
-
-
-
-    &__slideCounter {
-        position: absolute;
-        bottom: 05%;
-        left: 50%;
-        color: white;
-        font-size: 18px;
-        
-        @media screen and (max-width: 375px) {
-            display: none;
-        }
-    }
-
-
-
+  }
 }
 
 .hide__elements {
-    display: none;
+  display: none;
 }

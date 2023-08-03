@@ -32,7 +32,7 @@ export function AboutUs() {
     ]
 
     return(
-        <div className="aboutUs">
+        <main className="aboutUs">
                 <ImageBanner
                 ClassSection="section2"
                 ClassOverlay="section2__overlay2"
@@ -42,6 +42,6 @@ export function AboutUs() {
             <div className="aboutUs__collapse">
                 {collapse.map(collapse => <Collapse key={collapse.id} title={collapse.title} content={collapse.content} />)}
             </div>
-        </div>
+        </main>
     )
 }

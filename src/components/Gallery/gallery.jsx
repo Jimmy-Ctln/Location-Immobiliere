@@ -1,6 +1,6 @@
 import { Card } from "../Card/card";
-import "../../style/gallery.scss";
 import { datas } from "../../Datas/datas";
+import "../../style/gallery.scss";
 
 // gallery here allows you to retrieve property rentals and generate them using the card component.
 
