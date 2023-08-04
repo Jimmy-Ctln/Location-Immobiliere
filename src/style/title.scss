@@ -13,13 +13,17 @@
 
   &__h2 {
     width: 100%;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 40px;
     white-space: nowrap;
 
+    @media screen and (max-width: 1200px) {
+      font-size: 24px;
+      white-space: normal;
+    }
+
     @media screen and (max-width: 1024px) {
       font-size: 23px;
-      white-space: normal;
     }
 
     @media screen and (max-width: 375px) {

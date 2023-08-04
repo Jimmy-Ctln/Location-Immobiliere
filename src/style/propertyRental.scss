@@ -13,7 +13,6 @@
     grid-template-columns: 50% 50%;
     margin: 10px auto;
     width: 100%;
-    border: 1px solid blue;
 
     @media screen and (max-width: 768px) {
       grid-template-rows: repeat(5, auto);

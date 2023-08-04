@@ -9,13 +9,8 @@
   height: 223px;
 
   @media screen and (max-width: 375px) {
-    border: 1px solid green;
     height: 100px;
     margin: 20px auto;
-  }
-
-  @media screen and (max-width: 376px) {
-    border: 1px solid red;
   }
 
   &__overlay1 {

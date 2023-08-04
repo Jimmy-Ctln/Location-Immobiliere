@@ -28,5 +28,11 @@
       gap: 20px;
       margin-bottom: 25px;
     }
+
+    @media screen and (max-width: 425px) {
+      // grid-template-columns: repeat(1, 335px);
+      grid-template-rows: repeat(auto-fit, 255px);
+    }
+
   }
 }
