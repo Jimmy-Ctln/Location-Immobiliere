@@ -28,7 +28,7 @@ export function Collapse({ title, content }) {
   return (
     <div className="collapse">
       <div className="collapse__title" onClick={handleClick}>{title}
-        <img src={arrow} className={`collapse__img ${isOpen ? 'collapse__img__animateOn' : 'collapse__img__animateOff'}`} alt="flèche animation"/>
+        <img src={arrow} className={`collapse__img ${isOpen ? 'collapse__img__spinninStart' : ''}`} alt="flèche animation"/>
       </div>
       <div className={`collapse__content ${isOpen ? 'collapse__content__open' : ''}`}>
           {isArray ? CheckIsArray() : content}
