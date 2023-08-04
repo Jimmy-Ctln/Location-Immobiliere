@@ -1,5 +1,4 @@
-import { StarActive } from "../Star/starActive";
-import { StarInactive } from "../Star/starInactive";
+import { Star } from "../Star/star";
 import "../../style/rating.scss";
 
 export function Rating({ rating }) {
@@ -7,13 +6,9 @@ export function Rating({ rating }) {
 
   const totalStars = 5;
 
-  for (let i = 0; i < rating; i++) {
-    arrayStars.push(<StarActive key={i} />);
+  for (let i = 0; i < totalStars; i++) {
+    arrayStars.push(<Star isActive={i < rating} key={i} />);
   }
-
-  for (let i = arrayStars.length; i < totalStars; i++) {
-    arrayStars.push(<StarInactive key={i} />);
-  }
-
+  
   return <div className="rating">{arrayStars}</div>;
 }
