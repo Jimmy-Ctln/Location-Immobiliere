@@ -11,7 +11,6 @@ export function Card({ id, cover, title }) {
   // With the onClick event, I can store the id of the card here
 
   const retrieveIdCard = (propertyRentalId) => {
-    // console.log(id)
     navigate("../property-rental/" + propertyRentalId);
   };
 

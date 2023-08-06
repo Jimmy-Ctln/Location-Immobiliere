@@ -11,6 +11,11 @@
   flex-direction: column;
   align-content: center;
 
+  @media screen and (max-width: 1024px) {
+   margin-top: 0;
+  }
+
+
   &__h2 {
     width: 100%;
     font-size: 28px;
@@ -28,7 +33,6 @@
 
     @media screen and (max-width: 375px) {
       width: 100%;
-      bottom: 40%;
     }
   }
 
