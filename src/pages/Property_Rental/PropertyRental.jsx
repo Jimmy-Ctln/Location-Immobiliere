@@ -37,8 +37,6 @@ export function PropertyRental() {
         const FullName = item.host.name.split(' ')
         const firstName = FullName[0]
         const lastName = FullName[1]
-        
-        console.log(FullName)
 
         return(
         <div className="property__content" key={item.id}>
