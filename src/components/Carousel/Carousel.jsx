@@ -1,9 +1,9 @@
 import { useState } from "react"
 import arrowLeft from '../../assets/arrow-left.svg'
 import arrowRight from '../../assets/arrow-right.svg'
-import '../../style/carrousel.scss'
+import '../../style/carousel.scss'
 
-export function Carrousel({pictures}) {
+export function Carousel({pictures}) {
 
 
     const [currImage, setCurrImage] = useState(0)

@@ -9,12 +9,12 @@ export function Gallery() {
   return (
     <div className="gallery">
       <div className="gallery__grid">
-        {datas.map((location) => (
+        {datas.map((property) => (
           <Card 
-            key={location.id}
-            id={location.id} 
-            cover={location.cover} 
-            title={location.title} />
+            key={property.id}
+            id={property.id} 
+            cover={property.cover} 
+            title={property.title} />
         ))}
         </div>
     </div>

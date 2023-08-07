@@ -6,17 +6,17 @@
   align-items: center;
   gap: 200px;
   width: 95%;
-  margin: 90px auto;
-  @media screen and (max-width: 375px) {
-    margin: 60px auto;
-    gap: 160px;
+  margin: 90px auto 90px;
+  @media screen and (max-width: 1024px) {
+    margin: 60px auto 0px;
+    gap: 120px;
   }
 
   &__img {
-    width: 40%;
+    width: 60%;
 
-    @media screen and (max-width: 375px) {
-      width: 60%;
+    @media screen and (max-width: 600px) {
+      width: 55%;
     }
   }
 
@@ -28,13 +28,17 @@
     height: 51px;
     font-weight: 500;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1200px) {
+      font-size: 170%
+    }
+
+    @media screen and (max-width: 900px) {
       font-size: 150%;
       white-space: pre-wrap;
     }
     
-    @media screen and (max-width: 375px) {
-      font-size: 100%;
+    @media screen and (max-width: 800px) {
+      font-size: 120%;
       width: 100%;
       line-height: 25px;
       white-space: pre-wrap;

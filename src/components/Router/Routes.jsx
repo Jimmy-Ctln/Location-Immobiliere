@@ -14,10 +14,8 @@ export function Router() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/a-propos" element={<AboutUs />} />
-          <Route
-            path="/property-rental/:propertyRentalId" element={<PropertyRental />}
-          />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/property-rental/:propertyRentalId" element={<PropertyRental />} />
         </Routes>
       </div>
     </BrowserRouter>

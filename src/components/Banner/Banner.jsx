@@ -1,7 +1,7 @@
-import '../../style/ImageBanner.scss'
+import '../../style/banner.scss'
 
 
-export function ImageBanner({picture, ClassSection, ClassOverlay, ClassImg, ClassTitle, title}) {
+export function Banner({picture, ClassSection, ClassOverlay, ClassImg, ClassTitle, title}) {
     return(
         <div className={ClassSection}> 
             <div className={ClassOverlay}>

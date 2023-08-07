@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Title } from "../../components/Title/Title";
 import { datas } from "../../Datas/datas";
 import { useNavigate, useParams } from 'react-router-dom';
-import { Carrousel } from "../../components/Carrousel/Carrousel";
+import { Carousel } from "../../components/Carousel/Carousel";
 import { Rating } from "../../components/Rating/rating";
 import { Tags } from "../../components/Tags/tags";
 import { Collapse } from "../../components/Collapse/collapse";
@@ -15,9 +15,10 @@ export function PropertyRental() {
   // I'll be able to generate a page with the exact id of the property rental
 
   const { propertyRentalId } = useParams();
-  let navigate = useNavigate();
-
+  
   const [filteredData, setFilteredData] = useState([]);
+  
+  let navigate = useNavigate();
 
   useEffect(() => {
     const checkId = datas.find((data) => data.id === propertyRentalId);
@@ -41,7 +42,7 @@ export function PropertyRental() {
         return(
         <div className="property__content" key={item.id}>
           <div className="property__carrousel">
-            <Carrousel pictures={item.pictures} />
+            <Carousel pictures={item.pictures} />
           </div>
 
           <div className="property__grid">

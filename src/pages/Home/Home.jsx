@@ -1,15 +1,14 @@
-import { ImageBanner } from "../../components/ImageBanner/imageBanner"
+import { Banner } from "../../components/Banner/Banner"
 import { Gallery } from "../../components/Gallery/gallery"
 import homeBackground from '../../assets/home-background.png'
-import '../../style/ImageBanner.scss'
-import '../../style/home.scss'
+import '../../style/banner.scss'
 
-// "Home" displays the "ImageBanner" and "Gallery" components. "Home" will be called with the "/" route in App.jsx
+// "Home" displays the "Banner" and "Gallery" components. "Home" will be called with the "/" route in App.jsx
 
 export function Home() {
     return(
         <main className="main-content">
-            <ImageBanner
+            <Banner
             picture={homeBackground}
             ClassSection="section"
             ClassOverlay="section__overlay1"

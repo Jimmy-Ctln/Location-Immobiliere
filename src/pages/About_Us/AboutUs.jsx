@@ -1,8 +1,8 @@
-import { ImageBanner } from "../../components/ImageBanner/imageBanner"
+import { Banner } from "../../components/Banner/Banner"
 import { Collapse } from "../../components/Collapse/collapse"
 import aboutBackground from '../../assets/aboutUs-Background.png'
 import '../../style/aboutUs.scss'
-import '../../style/ImageBanner.scss'
+import '../../style/banner.scss'
 
 
 export function AboutUs() {
@@ -33,7 +33,7 @@ export function AboutUs() {
 
     return(
         <main className="aboutUs">
-                <ImageBanner
+                <Banner
                 ClassSection="section2"
                 ClassOverlay="section2__overlay2"
                 ClassImg='section2__img2'
