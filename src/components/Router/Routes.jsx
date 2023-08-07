@@ -4,6 +4,7 @@ import { Header } from "../Header/header";
 import { AboutUs } from "../../pages/About_Us/AboutUs";
 import { ErrorPage } from "../../pages/ErrorPage/errorPage";
 import { PropertyRental } from "../../pages/Property_Rental/PropertyRental";
+import { Footer } from "../Footer/footer";
 import "../../style/mainContainer.scss";
 
 export function Router() {
@@ -18,6 +19,7 @@ export function Router() {
           <Route path="/property-rental/:propertyRentalId" element={<PropertyRental />} />
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }
