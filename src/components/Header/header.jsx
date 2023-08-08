@@ -2,8 +2,6 @@ import logo from "../../assets/logo.svg";
 import { NavBar } from "../Navbar/navbar";
 import '../../style/header.scss'
 
-// Header displays the logo and creates a navigation that will be used in "App.jsx".
-
 export function Header() {
   
   return (

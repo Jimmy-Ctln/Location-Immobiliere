@@ -5,7 +5,6 @@ import '../../style/carousel.scss'
 
 export function Carousel({pictures}) {
 
-
     const [currImage, setCurrImage] = useState(0)
     const currentSlide = currImage + 1;
     const totalPictures = pictures.length;
@@ -29,13 +28,13 @@ export function Carousel({pictures}) {
     }
 
     return(
-            <div className="carrousel">
-                    <img className="carrousel__img" src={pictures[currImage]} alt="logement" />
-                    <img src={arrowLeft} className={`carrousel__arrow__left ${hideElement ? 'hide__elements' : ''}`} onClick={prevSlide} alt="Flèche de gauche carrousel" />
-                    <img src={arrowRight} className={`carrousel__arrow__right ${hideElement ? 'hide__elements' : ''}`} onClick={nextSlide} alt="Flèche de droite carrousel" />
-                <div className={`carrousel__slideCounter ${hideElement ? 'hide__elements' : ''}`}>
-                    <span>{currentSlide}/{totalPictures}</span>
-                </div>
+        <div className="carrousel">
+                <img className="carrousel__img" src={pictures[currImage]} alt="logement" />
+                <img src={arrowLeft} className={`carrousel__arrow__left ${hideElement ? 'hide__elements' : ''}`} onClick={prevSlide} alt="Flèche de gauche carrousel" />
+                <img src={arrowRight} className={`carrousel__arrow__right ${hideElement ? 'hide__elements' : ''}`} onClick={nextSlide} alt="Flèche de droite carrousel" />
+            <div className={`carrousel__slideCounter ${hideElement ? 'hide__elements' : ''}`}>
+                <span>{currentSlide}/{totalPictures}</span>
             </div>
+        </div>
     )
 }

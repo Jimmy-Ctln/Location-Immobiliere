@@ -4,7 +4,6 @@ import "../../style/collapse.scss";
 
 export function Collapse({ title, content }) {
 
-
   const isArray = Array.isArray(content);
 
   function CheckIsArray() {
