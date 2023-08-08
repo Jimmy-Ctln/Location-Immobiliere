@@ -29,7 +29,7 @@ export function Collapse({ title, content }) {
         <img src={arrow} className={`collapse__img ${isOpen ? 'collapse__img__spinninStart' : ''}`} alt="flèche animation"/>
       </div>
       <div className={`collapse__content ${isOpen ? 'collapse__content__open' : ''}`}>
-          {isArray ? CheckIsArray() : content}
+          {CheckIsArray()}
       </div>
     </div>
   )
