@@ -24,7 +24,6 @@ export function Collapse({ title, content }) {
     setIsOpen(!isOpen)
   }
 
-  
   return (
     <div className="collapse">
       <div className="collapse__title" onClick={handleClick}>{title}
