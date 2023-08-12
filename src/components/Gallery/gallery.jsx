@@ -1,5 +1,5 @@
 import { Card } from "../Card/card";
-import { datas } from "../../Datas/datas";
+import data from '../../Data/data.json'
 import "../../style/gallery.scss";
 
 // gallery here allows you to retrieve property rentals and generate them using the card component.
@@ -9,7 +9,7 @@ export function Gallery() {
   return (
     <div className="gallery">
       <div className="gallery__grid">
-        {datas.map((property) => (
+        {data.map((property) => (
           <Card 
             key={property.id}
             id={property.id} 

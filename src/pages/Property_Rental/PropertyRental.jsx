@@ -1,7 +1,7 @@
 import { useState} from "react";
 import { useEffect } from 'react';
 import { Title } from "../../components/Title/Title";
-import { datas } from "../../Datas/datas";
+import data from '../../Data/data.json'
 import { useNavigate, useParams } from 'react-router-dom';
 import { Carousel } from "../../components/Carousel/Carousel";
 import { Rating } from "../../components/Rating/rating";
@@ -21,12 +21,12 @@ export function PropertyRental() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    const checkId = datas.find((data) => data.id === propertyRentalId);
+    const checkId = data.find((data) => data.id === propertyRentalId);
 
     if (!checkId) {
       navigate("*");
     } else {
-      const filteredData = datas.filter((item) => item.id === propertyRentalId);
+      const filteredData = data.filter((item) => item.id === propertyRentalId);
       setFilteredData(filteredData);
     }
   }, [propertyRentalId, navigate]);
