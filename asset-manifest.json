@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Location-Immobiliere/static/css/main.ff025b39.css",
-    "main.js": "/Location-Immobiliere/static/js/main.9015600f.js",
+    "main.css": "/Location-Immobiliere/static/css/main.5e0f20bc.css",
+    "main.js": "/Location-Immobiliere/static/js/main.fd111f44.js",
     "static/media/aboutUs-Background.png": "/Location-Immobiliere/static/media/aboutUs-Background.640955dab8c7bff25514.png",
     "static/media/home-background.png": "/Location-Immobiliere/static/media/home-background.436892d1a6d8aa062e5c.png",
-    "static/media/logo.svg": "/Location-Immobiliere/static/media/logo.69a3df082e3c5a974ce0abfe5dc4be4e.svg",
-    "static/media/logo_footer.svg": "/Location-Immobiliere/static/media/logo_footer.49d6c6c773443de2f700868f876ad8db.svg",
-    "static/media/error404.svg": "/Location-Immobiliere/static/media/error404.f20604d9c3f0bf4b2680c8aab9b26cc3.svg",
+    "static/media/logo.svg": "/Location-Immobiliere/static/media/logo.569b01ae7d8fc62c3bc3c6fb71ad27b5.svg",
+    "static/media/logo_footer.svg": "/Location-Immobiliere/static/media/logo_footer.f84048defbdb7b04a3a0c61271595212.svg",
+    "static/media/error404.svg": "/Location-Immobiliere/static/media/error404.5a794fdb449a07d954fba159167b4148.svg",
     "index.html": "/Location-Immobiliere/index.html",
-    "static/media/star-active.svg": "/Location-Immobiliere/static/media/star-active.f47de1483d883b69c6210d622f75c05c.svg",
-    "static/media/star-inactive.svg": "/Location-Immobiliere/static/media/star-inactive.c864407432a61da616f95e669105d42e.svg",
-    "static/media/arrow.svg": "/Location-Immobiliere/static/media/arrow.4b8a8db56debe28d08d9e59e272bbc3c.svg",
-    "static/media/arrow-left.svg": "/Location-Immobiliere/static/media/arrow-left.3529f3989e39b758930113b6f7a3d1d4.svg",
-    "static/media/arrow-right.svg": "/Location-Immobiliere/static/media/arrow-right.20f8ff01b05f9ea0cf55933722f7806c.svg",
-    "main.ff025b39.css.map": "/Location-Immobiliere/static/css/main.ff025b39.css.map",
-    "main.9015600f.js.map": "/Location-Immobiliere/static/js/main.9015600f.js.map"
+    "static/media/star-active.svg": "/Location-Immobiliere/static/media/star-active.3d4af16550d68403347ec9c79f4a4bef.svg",
+    "static/media/star-inactive.svg": "/Location-Immobiliere/static/media/star-inactive.266f8966517bbaf33c447d7cddff5859.svg",
+    "static/media/arrow.svg": "/Location-Immobiliere/static/media/arrow.67f96af909c2088a19e5ad5378f46137.svg",
+    "static/media/arrow-left.svg": "/Location-Immobiliere/static/media/arrow-left.cdd03842d31401ee166dc7512d262702.svg",
+    "static/media/arrow-right.svg": "/Location-Immobiliere/static/media/arrow-right.56557f942edffe00a45e68dee308575a.svg",
+    "main.5e0f20bc.css.map": "/Location-Immobiliere/static/css/main.5e0f20bc.css.map",
+    "main.fd111f44.js.map": "/Location-Immobiliere/static/js/main.fd111f44.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff025b39.css",
-    "static/js/main.9015600f.js"
+    "static/css/main.5e0f20bc.css",
+    "static/js/main.fd111f44.js"
   ]
 }
